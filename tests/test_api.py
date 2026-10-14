@@ -134,3 +134,17 @@ def test_smart_disk_health(client):
     assert disks["0:7"]["type"] == "hdd"
     assert disks["0:7"]["health"] == "OK"
     assert disks["0:7"]["serial"] == "SERIAL0000"
+
+
+def test_bandwidth_for_delegated_monitor_account(client, nas):
+    """QuTS hero refuses QSM40 to delegated accounts; don't re-login every poll."""
+    from tests.fakes import AUTH_FAILED
+
+    nas.overrides["chart_func=QSM40bandwidth"] = AUTH_FAILED
+    client.get_system_health()
+    logins_before = sum("authLogin.cgi" in url for url in nas.requests)
+    for _ in range(3):
+        bandwidth = client.get_bandwidth()
+    assert bandwidth["eth4"]["name"] == "Adapter 5"
+    assert sum("authLogin.cgi" in url for url in nas.requests) == logins_before
+    assert not any("QSM40" in url for url in nas.requests)

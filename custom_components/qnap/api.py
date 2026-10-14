@@ -34,6 +34,22 @@ def _float(value: Any) -> float | None:
         return None
 
 
+def _bandwidth_interfaces(resp: dict[str, Any] | None) -> list[dict[str, Any]]:
+    """Return the interface entries of either bandwidth chart response."""
+    info = (resp or {}).get("bandwidth_info")
+    if not info:
+        return []
+    if "item" in info:
+        items = info["item"]
+        return items if isinstance(items, list) else [items]
+    interfaces = []
+    for prefix, key in (("eth", "eth_index_list"), ("wlan", "wlan_index_list")):
+        for num in (info.get(key) or "").split(","):
+            if num and (entry := info.get(prefix + num)):
+                interfaces.append({**entry, "id": prefix + num})
+    return interfaces
+
+
 class QnapClient(QNAPStats):
     """qnapstats with the fixes and QuTS hero endpoints the integration needs."""
 
@@ -181,6 +197,38 @@ class QnapClient(QNAPStats):
             psu_index += 1
 
         return details
+
+    def get_bandwidth(self) -> dict[str, dict[str, Any]] | None:
+        """Obtain current network throughput per interface.
+
+        qnapstats asks the QSM40 chart first, but QuTS hero answers it with
+        authPassed=0 for a delegated System Monitoring account. qnapstats takes
+        that for an expired session, so every poll logs in again and still gets
+        nothing. The legacy chart works for both account types, so ask it first
+        and fall back to QSM40 only when it has no interfaces (newer QTS).
+        """
+        resp = self._get_url("management/chartReq.cgi?chart_func=bandwidth")
+        if not _bandwidth_interfaces(resp):
+            resp = self._get_url(
+                "management/chartReq.cgi?chart_func=QSM40bandwidth",
+                retry_on_error=False,
+                force_list="item",
+            )
+        interfaces = _bandwidth_interfaces(resp)
+        if resp is None:
+            return None
+
+        info = resp["bandwidth_info"] if "bandwidth_info" in resp else {}
+        default = resp.get("df_gateway") or info.get("df_gateway")
+        return {
+            item["id"]: {
+                "name": item.get("dname") or item.get("name"),
+                "rx": round(int(item["rx"]) / 5),
+                "tx": round(int(item["tx"]) / 5),
+                "is_default": item["id"] == default,
+            }
+            for item in interfaces
+        }
 
     def get_pool_ids(self) -> list[str]:
         """List storage pool IDs (QuTS hero / storage v2)."""

@@ -145,6 +145,21 @@ async def test_nas_unreachable_marks_unavailable(
     assert _state(hass, "sensor.nas_example_cpu_usage").state == STATE_UNAVAILABLE
 
 
+async def test_nic_missing_from_bandwidth_is_unknown(
+    hass: HomeAssistant, entry, nas
+) -> None:
+    """Core raises KeyError adding the entity when bandwidth lacks the NIC."""
+    nas.overrides["chart_func=bandwidth"] = (
+        b'<?xml version="1.0" encoding="UTF-8"?><QDocRoot version="1.0">'
+        b"<authPassed><![CDATA[1]]></authPassed></QDocRoot>"
+    )
+    nas.overrides["chart_func=QSM40bandwidth"] = nas.overrides["chart_func=bandwidth"]
+    async_fire_time_changed(hass, dt_util.utcnow() + timedelta(minutes=2))
+    await hass.async_block_till_done()
+    assert _state(hass, "sensor.nas_example_eth4_download").state == "unknown"
+    assert _state(hass, "sensor.nas_example_cpu_usage").state != STATE_UNAVAILABLE
+
+
 async def test_diagnostics_redacts_identity(hass: HomeAssistant, entry) -> None:
     from custom_components.qnap.diagnostics import (
         async_get_config_entry_diagnostics,

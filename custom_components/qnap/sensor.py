@@ -510,7 +510,10 @@ class QNAPNetworkSensor(QNAPSensor):
         if self.entity_description.key == "network_err":
             return nic["err_packets"]
 
-        data = self.coordinator.data["bandwidth"][self.monitor_device]
+        data = self.coordinator.data["bandwidth"].get(self.monitor_device)
+        if data is None:
+            # Core raises KeyError here when the NAS omits a NIC from bandwidth.
+            return None
         if self.entity_description.key == "network_tx":
             return data["tx"]
 
