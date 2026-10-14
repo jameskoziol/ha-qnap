@@ -117,3 +117,20 @@ def test_login_failure_raises_auth_error(client, nas):
 def test_bandwidth_falls_back_on_quts_hero(client):
     bandwidth = client.get_bandwidth()
     assert "eth4" in bandwidth
+
+
+@pytest.mark.parametrize("fixture", sorted(p.name for p in FIXTURES.glob("*.xml")))
+def test_fixture_is_well_formed(fixture):
+    """Sanitising must not break the XML."""
+    import xml.dom.minidom
+
+    xml.dom.minidom.parse(str(FIXTURES / fixture))
+
+
+def test_smart_disk_health(client):
+    disks = client.get_smart_disk_health()
+    assert len(disks) == 18
+    assert disks["0:1"]["type"] == "ssd"
+    assert disks["0:7"]["type"] == "hdd"
+    assert disks["0:7"]["health"] == "OK"
+    assert disks["0:7"]["serial"] == "SERIAL0000"

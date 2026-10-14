@@ -22,6 +22,8 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
+          # Brand assets come with a HACS default-store submission, not before.
+          ignore: brands
 
   tests:
     runs-on: ubuntu-latest
