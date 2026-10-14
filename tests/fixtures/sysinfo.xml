@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QDocRoot version="1.0">
+<authPassed><![CDATA[1]]></authPassed><model><modelName><![CDATA[TS-X87XU]]></modelName><internalModelName><![CDATA[TS-X87X]]></internalModelName><platform><![CDATA[TS-NASX86]]></platform><platform_ex><![CDATA[X86_ROCKETLAKE]]></platform_ex><customModelName><![CDATA[]]></customModelName><displayModelName><![CDATA[TS-h1887XU-RP]]></displayModelName><sas_model><![CDATA[0]]></sas_model><storage_v2>1</storage_v2>
+<encryptfsSupported><![CDATA[1]]></encryptfsSupported><is_zfs><![CDATA[1]]></is_zfs><node><![CDATA[]]></node><dual_node><![CDATA[]]></dual_node></model>
+<firmware><name><![CDATA[QuTS hero]]></name><version><![CDATA[h5.2.10]]></version><number><![CDATA[3577]]></number><build><![CDATA[20260731]]></build><patch><![CDATA[0]]></patch><buildTime><![CDATA[2026/07/31]]></buildTime></firmware>
+<rfs_bits><![CDATA[64]]></rfs_bits><specVersion><![CDATA[1.0]]></specVersion><hostname><![CDATA[NAS-Example]]></hostname><DemoSiteSuppurt><![CDATA[no]]></DemoSiteSuppurt><customLogo><customFrontLogo><![CDATA[]]></customFrontLogo><customLoginLogo><![CDATA[]]></customLoginLogo></customLogo>
+<func><name><![CDATA[S_MENU_40]]></name><ownContent><root>
+<timezone><![CDATA[(GMT+10:00) Canberra, Melbourne, Sydney]]></timezone><cpu_usage><![CDATA[12.8 %]]></cpu_usage><cpufan_count>0</cpufan_count>
+<fan_reg_cnt><![CDATA[0]]></fan_reg_cnt><temp_reg_cnt><![CDATA[0]]></temp_reg_cnt><cpu_model><![CDATA[Intel(R) Xeon(R) E-2336 CPU @ 2.90GHz]]></cpu_model><cpu_model_name><![CDATA[Intel(R) Xeon(R) E-2336 CPU]]></cpu_model_name><cpu_burst_freq><![CDATA[4800 MHz]]></cpu_burst_freq><total_memory><![CDATA[128728.0]]></total_memory><free_memory><![CDATA[65915.7]]></free_memory><memory_below_recommended_size><![CDATA[0]]></memory_below_recommended_size><mem_info_support><![CDATA[1]]></mem_info_support><mem_max_channels><![CDATA[2]]></mem_max_channels><mem_max_slots><![CDATA[4]]></mem_max_slots><mem_slot_info><mem_valid><![CDATA[1]]></mem_valid><mem_slot_id><![CDATA[1]]></mem_slot_id><mem_dimm_id><![CDATA[1]]></mem_dimm_id><mem_channel_id><![CDATA[A]]></mem_channel_id><mem_dimm_size><![CDATA[32768]]></mem_dimm_size><mem_module_type><![CDATA[2]]></mem_module_type><mem_ecc_support><![CDATA[1]]></mem_ecc_support><mem_dimm_manufacturer><![CDATA[Micron Technology]]></mem_dimm_manufacturer><mem_slot_color><![CDATA[2]]></mem_slot_color></mem_slot_info>
+<mem_slot_info><mem_valid><![CDATA[1]]></mem_valid><mem_slot_id><![CDATA[2]]></mem_slot_id><mem_dimm_id><![CDATA[2]]></mem_dimm_id><mem_channel_id><![CDATA[A]]></mem_channel_id><mem_dimm_size><![CDATA[32768]]></mem_dimm_size><mem_module_type><![CDATA[2]]></mem_module_type><mem_ecc_support><![CDATA[1]]></mem_ecc_support><mem_dimm_manufacturer><![CDATA[Micron Technology]]></mem_dimm_manufacturer><mem_slot_color><![CDATA[1]]></mem_slot_color></mem_slot_info>
+<mem_slot_info><mem_valid><![CDATA[1]]></mem_valid><mem_slot_id><![CDATA[3]]></mem_slot_id><mem_dimm_id><![CDATA[1]]></mem_dimm_id><mem_channel_id><![CDATA[B]]></mem_channel_id><mem_dimm_size><![CDATA[32768]]></mem_dimm_size><mem_module_type><![CDATA[2]]></mem_module_type><mem_ecc_support><![CDATA[1]]></mem_ecc_support><mem_dimm_manufacturer><![CDATA[Micron Technology]]></mem_dimm_manufacturer><mem_slot_color><![CDATA[2]]></mem_slot_color></mem_slot_info>
+<mem_slot_info><mem_valid><![CDATA[1]]></mem_valid><mem_slot_id><![CDATA[4]]></mem_slot_id><mem_dimm_id><![CDATA[2]]></mem_dimm_id><mem_channel_id><![CDATA[B]]></mem_channel_id><mem_dimm_size><![CDATA[32768]]></mem_dimm_size><mem_module_type><![CDATA[2]]></mem_module_type><mem_ecc_support><![CDATA[1]]></mem_ecc_support><mem_dimm_manufacturer><![CDATA[Micron Technology]]></mem_dimm_manufacturer><mem_slot_color><![CDATA[1]]></mem_slot_color></mem_slot_info>
+<mem_slot_color_support><![CDATA[1]]></mem_slot_color_support><nic_cnt><![CDATA[6]]></nic_cnt><nic_lan_cnt><![CDATA[6]]></nic_lan_cnt><nic_qa_port_cnt><![CDATA[0]]></nic_qa_port_cnt><ifindex1>2</ifindex1>
+<ifname1>eth0</ifname1>
+<dname1>Adapter 1</dname1>
+<rx_packet1>0</rx_packet1>
+<tx_packet1>0</tx_packet1>
+<err_packet1>0</err_packet1>
+<eth_status1>0</eth_status1>
+<eth_max_speed1>2500</eth_max_speed1>
+<is_QA_port_eth1>0</is_QA_port_eth1>
+<eth_ip1>0.0.0.0</eth_ip1>
+<eth_mask1>0.0.0.0</eth_mask1>
+<eth_mac1>00:00:5e:00:53:01</eth_mac1>
+<eth_usage1>DHCP</eth_usage1>
+<eth_ipv6_info1><eth_ipv6_enable>1</eth_ipv6_enable></eth_ipv6_info1><dnsinfo1></dnsinfo1><ifindex2>3</ifindex2>
+<ifname2>eth1</ifname2>
+<dname2>Adapter 2</dname2>
+<rx_packet2>0</rx_packet2>
+<tx_packet2>0</tx_packet2>
+<err_packet2>0</err_packet2>
+<eth_status2>0</eth_status2>
+<eth_max_speed2>2500</eth_max_speed2>
+<is_QA_port_eth2>0</is_QA_port_eth2>
+<eth_ip2>0.0.0.0</eth_ip2>
+<eth_mask2>0.0.0.0</eth_mask2>
+<eth_mac2>00:00:5e:00:53:02</eth_mac2>
+<eth_usage2>DHCP</eth_usage2>
+<eth_ipv6_info2><eth_ipv6_enable>1</eth_ipv6_enable></eth_ipv6_info2><dnsinfo2><dns1>192.0.2.10</dns1>
+</dnsinfo2><ifindex3>7</ifindex3>
+<ifname3>eth2</ifname3>
+<dname3>Adapter 3</dname3>
+<rx_packet3>0</rx_packet3>
+<tx_packet3>0</tx_packet3>
+<err_packet3>0</err_packet3>
+<eth_status3>0</eth_status3>
+<eth_max_speed3>10000</eth_max_speed3>
+<is_QA_port_eth3>0</is_QA_port_eth3>
+<eth_ip3>0.0.0.0</eth_ip3>
+<eth_mask3>0.0.0.0</eth_mask3>
+<eth_mac3>00:00:5e:00:53:03</eth_mac3>
+<eth_usage3>DHCP</eth_usage3>
+<eth_ipv6_info3><eth_ipv6_enable>1</eth_ipv6_enable></eth_ipv6_info3><dnsinfo3></dnsinfo3><ifindex4>6</ifindex4>
+<ifname4>eth3</ifname4>
+<dname4>Adapter 4</dname4>
+<rx_packet4>0</rx_packet4>
+<tx_packet4>0</tx_packet4>
+<err_packet4>0</err_packet4>
+<eth_status4>0</eth_status4>
+<eth_max_speed4>10000</eth_max_speed4>
+<is_QA_port_eth4>0</is_QA_port_eth4>
+<eth_ip4>0.0.0.0</eth_ip4>
+<eth_mask4>0.0.0.0</eth_mask4>
+<eth_mac4>00:00:5e:00:53:04</eth_mac4>
+<eth_usage4>DHCP</eth_usage4>
+<eth_ipv6_info4><eth_ipv6_enable>1</eth_ipv6_enable></eth_ipv6_info4><dnsinfo4><dns1>192.0.2.10</dns1>
+</dnsinfo4><ifindex5>5</ifindex5>
+<ifname5>eth4</ifname5>
+<dname5>Adapter 5</dname5>
+<rx_packet5>12826635365</rx_packet5>
+<tx_packet5>4377162775</tx_packet5>
+<err_packet5>0</err_packet5>
+<eth_status5>1</eth_status5>
+<eth_max_speed5>25000</eth_max_speed5>
+<is_QA_port_eth5>0</is_QA_port_eth5>
+<eth_ip5>192.0.2.10</eth_ip5>
+<eth_mask5>255.255.255.192</eth_mask5>
+<eth_mac5>00:00:5e:00:53:05</eth_mac5>
+<eth_usage5>DHCP</eth_usage5>
+<eth_ipv6_info5><eth_ipv6_enable>1</eth_ipv6_enable><eth_ipv6_ip1>2001:db8::10</eth_ipv6_ip1>
+<eth_ipv6_ip2>fe80::10</eth_ipv6_ip2>
+</eth_ipv6_info5><dnsinfo5><dns1>192.0.2.10</dns1>
+<dns2>2001:db8::10</dns2>
+</dnsinfo5><ifindex6>4</ifindex6>
+<ifname6>eth5</ifname6>
+<dname6>Adapter 6</dname6>
+<rx_packet6>0</rx_packet6>
+<tx_packet6>0</tx_packet6>
+<err_packet6>0</err_packet6>
+<eth_status6>0</eth_status6>
+<eth_max_speed6>25000</eth_max_speed6>
+<is_QA_port_eth6>0</is_QA_port_eth6>
+<eth_ip6>0.0.0.0</eth_ip6>
+<eth_mask6>0.0.0.0</eth_mask6>
+<eth_mac6>00:00:5e:00:53:06</eth_mac6>
+<eth_usage6>DHCP</eth_usage6>
+<eth_ipv6_info6><eth_ipv6_enable>0</eth_ipv6_enable></eth_ipv6_info6><dnsinfo6></dnsinfo6><bonding_list></bonding_list>
+<bonding_cnt><![CDATA[0]]></bonding_cnt><ipv6Enable><![CDATA[1]]></ipv6Enable><dnsInfo><DNS_LIST><![CDATA[ 192.0.2.10]]></DNS_LIST><DNS_LIST><![CDATA[ 2001:db8::10]]></DNS_LIST></dnsInfo>
+<WirelessSupport><![CDATA[1]]></WirelessSupport><Error><![CDATA[1]]></Error><ThunderboltSupport><![CDATA[0]]></ThunderboltSupport><uptime_day><![CDATA[52]]></uptime_day><uptime_hour><![CDATA[2]]></uptime_hour><uptime_min><![CDATA[27]]></uptime_min><uptime_sec><![CDATA[49]]></uptime_sec><HDTempWarnT><![CDATA[55]]></HDTempWarnT><HDTempErrT><![CDATA[60]]></HDTempErrT><SSDTempWarnT><![CDATA[70]]></SSDTempWarnT><SSDTempErrT><![CDATA[70]]></SSDTempErrT><cpu_tempc>62</cpu_tempc><cpu_tempf>143</cpu_tempf>
+<CPUTempWarnT><![CDATA[75]]></CPUTempWarnT><CPUTempErrT><![CDATA[80]]></CPUTempErrT><system_temp_count><![CDATA[1]]></system_temp_count><sys_tempc>40</sys_tempc>
+<sys_tempf>104</sys_tempf>
+<SysTempWarnT><![CDATA[60]]></SysTempWarnT><SysTempErrT><![CDATA[70]]></SysTempErrT><device_class_list><device_class><device_class_id><![CDATA[0]]></device_class_id><device_class_name><![CDATA[TPU]]></device_class_name><device_type><![CDATA[2000]]></device_type><dev_cnt><![CDATA[0]]></dev_cnt><qos_srv_cnt><![CDATA[0]]></qos_srv_cnt></device_class>
+<device_class><device_class_id><![CDATA[2]]></device_class_id><device_class_name><![CDATA[Hailo]]></device_class_name><device_type><![CDATA[2002]]></device_type><dev_cnt><![CDATA[0]]></dev_cnt><qos_srv_cnt><![CDATA[0]]></qos_srv_cnt></device_class>
+<device_class><device_class_id><![CDATA[3]]></device_class_id><device_class_name><![CDATA[QAI]]></device_class_name><device_type><![CDATA[2003]]></device_type><dev_cnt><![CDATA[0]]></dev_cnt><qos_srv_cnt><![CDATA[0]]></qos_srv_cnt></device_class>
+</device_class_list>
+<sysfan_count>4</sysfan_count>
+<sysfan_alias>SYS FAN</sysfan_alias>
+<sysfan1>7756</sysfan1>
+<sysfan_fail1>0</sysfan_fail1>
+<sysfan1_stat>0</sysfan1_stat>
+<sysfan2>7673</sysfan2>
+<sysfan_fail2>0</sysfan_fail2>
+<sysfan2_stat>0</sysfan2_stat>
+<sysfan3>7539</sysfan3>
+<sysfan_fail3>0</sysfan_fail3>
+<sysfan3_stat>0</sysfan3_stat>
+<sysfan4>7592</sysfan4>
+<sysfan_fail4>0</sysfan_fail4>
+<sysfan4_stat>0</sysfan4_stat>
+<Power1Temp>40</Power1Temp>
+<Power2Temp>40</Power2Temp>
+<Power1Status>0</Power1Status>
+<Power2Status>0</Power2Status>
+<PowerFanStatus1>2700</PowerFanStatus1>
+<PowerFanStatus2>4440</PowerFanStatus2>
+<BusType>NAS</BusType>
+<serial_number>Q000EXAMPLE</serial_number>
+<server_name><![CDATA[NAS-Example]]></server_name><qat_support><![CDATA[0]]></qat_support><codepage><![CDATA[437]]></codepage><bios_version>Q084AR10</bios_version>
+</root>
+</ownContent>
+</func>
+</QDocRoot>

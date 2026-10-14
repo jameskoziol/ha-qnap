@@ -1,0 +1,150 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "unique_id_mismatch": "The device serial number does not match the original device. Please make sure you are connecting to the same QNAP NAS."
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication, or the account lacks system monitoring rights. Use an administrator or a delegated administrator with System Monitoring, with two-step verification turned off.",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "reconfigure": {
+        "data": {
+          "host": "Host",
+          "password": "Password",
+          "port": "Port",
+          "ssl": "Uses an SSL certificate",
+          "username": "Username",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "host": "The hostname or IP address of your QNAP device."
+        },
+        "description": "Update the connection settings for your QNAP NAS.",
+        "title": "Reconfigure QNAP connection"
+      },
+      "user": {
+        "data": {
+          "host": "Host",
+          "password": "Password",
+          "port": "Port",
+          "ssl": "Uses an SSL certificate",
+          "username": "Username",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "host": "The hostname or IP address of your QNAP device."
+        },
+        "description": "This sensor allows getting various statistics from your QNAP NAS.",
+        "title": "Connect to the QNAP device"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "fan_problem": {
+        "name": "System fan {monitor_device}"
+      },
+      "pool_over_threshold": {
+        "name": "Storage pool {monitor_device} over threshold"
+      },
+      "pool_problem": {
+        "name": "Storage pool {monitor_device}"
+      },
+      "psu_problem": {
+        "name": "Power supply {monitor_device}"
+      }
+    },
+    "sensor": {
+      "cpu_temp": {
+        "name": "CPU temperature"
+      },
+      "cpu_usage": {
+        "name": "CPU usage"
+      },
+      "drive_smart_status": {
+        "name": "Drive {monitor_device} status"
+      },
+      "drive_temp": {
+        "name": "Drive {monitor_device} temperature"
+      },
+      "fan_speed": {
+        "name": "System fan {monitor_device} speed"
+      },
+      "memory_free": {
+        "name": "Memory available"
+      },
+      "memory_percent_used": {
+        "name": "Memory usage"
+      },
+      "memory_size": {
+        "name": "Memory size"
+      },
+      "memory_used": {
+        "name": "Memory used"
+      },
+      "network_err": {
+        "name": "{monitor_device} packet errors"
+      },
+      "network_link_status": {
+        "name": "{monitor_device} link"
+      },
+      "network_max_speed": {
+        "name": "{monitor_device} maximum speed"
+      },
+      "network_rx": {
+        "name": "{monitor_device} download"
+      },
+      "network_tx": {
+        "name": "{monitor_device} upload"
+      },
+      "pool_data_saved": {
+        "name": "Storage pool {monitor_device} space saved"
+      },
+      "pool_percentage_used": {
+        "name": "Storage pool {monitor_device} used"
+      },
+      "pool_size_free": {
+        "name": "Storage pool {monitor_device} free space"
+      },
+      "pool_size_total": {
+        "name": "Storage pool {monitor_device} size"
+      },
+      "pool_size_used": {
+        "name": "Storage pool {monitor_device} used space"
+      },
+      "pool_snapshot_used": {
+        "name": "Storage pool {monitor_device} snapshot space"
+      },
+      "psu_fan_speed": {
+        "name": "Power supply {monitor_device} fan speed"
+      },
+      "psu_temp": {
+        "name": "Power supply {monitor_device} temperature"
+      },
+      "status": {
+        "name": "Status"
+      },
+      "system_temp": {
+        "name": "System temperature"
+      },
+      "uptime": {
+        "name": "Uptime"
+      },
+      "volume_percentage_used": {
+        "name": "Volume used ({monitor_device})"
+      },
+      "volume_size_free": {
+        "name": "Free space ({monitor_device})"
+      },
+      "volume_size_total": {
+        "name": "Volume size ({monitor_device})"
+      },
+      "volume_size_used": {
+        "name": "Used space ({monitor_device})"
+      }
+    }
+  }
+}

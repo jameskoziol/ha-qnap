@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QDocRoot version="1.0">
+<authPassed><![CDATA[1]]></authPassed><model><modelName><![CDATA[TS-X87XU]]></modelName><internalModelName><![CDATA[TS-X87X]]></internalModelName><platform><![CDATA[TS-NASX86]]></platform><platform_ex><![CDATA[X86_ROCKETLAKE]]></platform_ex><customModelName><![CDATA[]]></customModelName><displayModelName><![CDATA[TS-h1887XU-RP]]></displayModelName><sas_model><![CDATA[0]]></sas_model><storage_v2>1</storage_v2>
+<encryptfsSupported><![CDATA[1]]></encryptfsSupported><is_zfs><![CDATA[1]]></is_zfs><node><![CDATA[]]></node><dual_node><![CDATA[]]></dual_node></model>
+<firmware><name><![CDATA[QuTS hero]]></name><version><![CDATA[h5.2.10]]></version><number><![CDATA[3577]]></number><build><![CDATA[20260731]]></build><patch><![CDATA[0]]></patch><buildTime><![CDATA[2026/07/31]]></buildTime></firmware>
+<rfs_bits><![CDATA[64]]></rfs_bits><specVersion><![CDATA[1.0]]></specVersion><hostname><![CDATA[NAS-Example]]></hostname><DemoSiteSuppurt><![CDATA[no]]></DemoSiteSuppurt><customLogo><customFrontLogo><![CDATA[]]></customFrontLogo><customLoginLogo><![CDATA[]]></customLoginLogo></customLogo>
+<DiskManageModel>Version1.01</DiskManageModel>
+<Pool_Index>
+<row>
+<poolID>1</poolID>
+<pool_vjbod>0</pool_vjbod>
+<allow_sys_vol>1</allow_sys_vol>
+<pool_tr>0</pool_tr>
+<pool_exos>0</pool_exos>
+<sed_pool>0</sed_pool>
+<removing_type>--</removing_type>
+</row>
+<row>
+<poolID>2</poolID>
+<pool_vjbod>0</pool_vjbod>
+<allow_sys_vol>1</allow_sys_vol>
+<pool_tr>0</pool_tr>
+<pool_exos>0</pool_exos>
+<sed_pool>0</sed_pool>
+<removing_type>--</removing_type>
+</row>
+</Pool_Index>
+<result>0</result>
+</QDocRoot>

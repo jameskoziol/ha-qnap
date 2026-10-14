@@ -1,0 +1,19 @@
+{
+  "domain": "qnap",
+  "name": "QNAP",
+  "codeowners": [
+    "@jameskoziol"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/jameskoziol/ha-qnap",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/jameskoziol/ha-qnap/issues",
+  "loggers": [
+    "qnapstats"
+  ],
+  "requirements": [
+    "qnapstats==0.4.0"
+  ],
+  "version": "0.1.0"
+}

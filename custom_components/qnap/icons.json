@@ -1,0 +1,104 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "fan_problem": {
+        "default": "mdi:fan",
+        "state": {
+          "on": "mdi:fan-alert"
+        }
+      },
+      "pool_over_threshold": {
+        "default": "mdi:database",
+        "state": {
+          "on": "mdi:database-alert"
+        }
+      },
+      "pool_problem": {
+        "default": "mdi:database-check",
+        "state": {
+          "on": "mdi:database-alert"
+        }
+      },
+      "psu_problem": {
+        "default": "mdi:power-plug",
+        "state": {
+          "on": "mdi:power-plug-off"
+        }
+      }
+    },
+    "sensor": {
+      "cpu_usage": {
+        "default": "mdi:chip"
+      },
+      "drive_smart_status": {
+        "default": "mdi:checkbox-marked-circle-outline"
+      },
+      "fan_speed": {
+        "default": "mdi:fan"
+      },
+      "memory_free": {
+        "default": "mdi:memory"
+      },
+      "memory_percent_used": {
+        "default": "mdi:memory"
+      },
+      "memory_size": {
+        "default": "mdi:memory"
+      },
+      "memory_used": {
+        "default": "mdi:memory"
+      },
+      "network_err": {
+        "default": "mdi:alert"
+      },
+      "network_link_status": {
+        "default": "mdi:checkbox-marked-circle-outline"
+      },
+      "network_max_speed": {
+        "default": "mdi:speedometer"
+      },
+      "network_rx": {
+        "default": "mdi:download"
+      },
+      "network_tx": {
+        "default": "mdi:upload"
+      },
+      "pool_data_saved": {
+        "default": "mdi:zip-box"
+      },
+      "pool_percentage_used": {
+        "default": "mdi:database"
+      },
+      "pool_size_free": {
+        "default": "mdi:database"
+      },
+      "pool_size_total": {
+        "default": "mdi:database"
+      },
+      "pool_size_used": {
+        "default": "mdi:database"
+      },
+      "pool_snapshot_used": {
+        "default": "mdi:camera-burst"
+      },
+      "psu_fan_speed": {
+        "default": "mdi:fan"
+      },
+      "status": {
+        "default": "mdi:checkbox-marked-circle-outline"
+      },
+      "volume_percentage_used": {
+        "default": "mdi:chart-pie"
+      },
+      "volume_size_free": {
+        "default": "mdi:chart-pie"
+      },
+      "volume_size_total": {
+        "default": "mdi:chart-pie"
+      },
+      "volume_size_used": {
+        "default": "mdi:chart-pie"
+      }
+    }
+  }
+}
