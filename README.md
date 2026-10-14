@@ -51,6 +51,10 @@ Everything is grouped under one device per NAS. Most sensors are diagnostic. Vol
 | Drives | status, temperature | — |
 | Network | link, upload, download, errors, max speed | — |
 
+Running on a TS-h1887XU-RP with QuTS hero h5.2.10:
+
+![QNAP entities on QuTS hero](docs/quts-hero-entities.png)
+
 ## Development
 
 The API client lives in `custom_components/qnap/api.py`. It subclasses `qnapstats` so each change can go upstream as its own pull request. Tests replay sanitised responses from a real NAS (`tests/fixtures/`):
